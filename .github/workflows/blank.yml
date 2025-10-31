@@ -15,6 +15,9 @@ jobs:
     env:
       NODE_ENV: production
       API_KEY: ${{ secrets.API_KEY }}
+      NEW_RELIC_LICENSE_KEY: test-key
+      NEW_RELIC_APP_NAME: nodejs-teste
+      NEW_RELIC_HOST: https://collector.newrelic.com
       
     steps:
       - name: Checkout do código
@@ -32,3 +35,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Executar script test-env.js
+        run: npm start
+        env:
+          CUSTOM_VAR: "valor-pipeline"
