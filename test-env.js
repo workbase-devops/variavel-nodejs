@@ -4,7 +4,9 @@ const requiredVars = [
   "NEW_RELIC_LICENSE_KEY",
   "NEW_RELIC_APP_NAME",
   "NEW_RELIC_HOST",
-  "NODE_ENV"
+  "NODE_ENV",
+  "BANANA",
+  "ABACATE"
 ];
 
 requiredVars.forEach((v) => {
