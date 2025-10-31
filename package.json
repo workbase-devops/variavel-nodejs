@@ -1,0 +1,12 @@
+{
+  "name": "test-env-vars",
+  "version": "1.0.0",
+  "description": "Projeto simples para testar variáveis de ambiente Node.js / GitHub Actions",
+  "main": "test-env.js",
+  "scripts": {
+    "start": "node test-env.js"
+  },
+  "author": "Claudio Martin Bianco",
+  "license": "MIT",
+  "dependencies": {}
+}
